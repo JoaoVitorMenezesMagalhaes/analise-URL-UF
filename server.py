@@ -2,11 +2,11 @@ import subprocess
 from urllib.parse import urlparse
 
 # Open the text file with the URLs
-with open('teste.txt', 'r') as file:
+with open('universidades.txt', 'r') as file:
     urls = file.read().splitlines()
 
 # Open the output file to save the results
-with open('server_url.txt', 'w') as output_file:
+with open('server_dns.txt', 'w') as output_file:
     # Process each URL
     for url in urls:
         # Extract the host part of the URL
